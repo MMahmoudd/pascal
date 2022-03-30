@@ -20,26 +20,26 @@ export default {
     },
     getCart() {
         return Service.get(`${resource}/cart`, {
-            headers: {
-                Authorization: 'Bearer ' + localStorage.getItem('token'),
-            },
-        })
-        .then((response) => {
-            // console.log('response cart', response)
-            if (response.status === 200) {
-                if (response.data.data) {
-                    response.data.data.forEach(item => {
-                        if (item.addons) {
-                            item.addons.forEach(addon => {
-                                item.total_price = item.total_price + addon.total_price
-                            })
-                        }
-                    })
-                }
+                headers: {
+                    Authorization: 'Bearer ' + localStorage.getItem('token'),
+                },
+            })
+            .then((response) => {
+                // console.log('response cart', response)
+                if (response.status === 200) {
+                    if (response.data.data) {
+                        response.data.data.forEach(item => {
+                            if (item.addons) {
+                                item.addons.forEach(addon => {
+                                    item.total_price = item.total_price + addon.total_price
+                                })
+                            }
+                        })
+                    }
 
-                return response.data
-            }
-        })
+                    return response.data
+                }
+            })
     },
     resetCart() {
         return Service.post(`${resource}/empty_cart`, {
@@ -74,7 +74,7 @@ export default {
             })
     },
     getCouponData(coupon) {
-        return Service.get(`${resource}/discount?restaurant_id=2&code=${coupon}`, {
+        return Service.get(`${resource}/discount?restaurant_id=6&code=${coupon}`, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token'),
                 accept: 'application/json'
@@ -91,8 +91,8 @@ export default {
     },
     getDeliveryFees(area_id) {
         return Service.get(`${resource}/delivery_fees`, {
-            params : {
-                restaurant_id : 2,
+            params: {
+                restaurant_id: 2,
                 area_id
             },
             headers: {

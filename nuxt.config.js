@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - Vegas",
-    title: "Vegas",
+    titleTemplate: "%s - pascal",
+    title: "pascal",
     htmlAttrs: {
       lang: "en",
     },
@@ -82,13 +82,13 @@ export default {
   modules: ["bootstrap-vue/nuxt", "@nuxtjs/pwa", "cookie-universal-nuxt"],
   pwa: {
     meta: {
-      title: "Vegas",
-      author: "Vegas",
+      title: "pascal",
+      author: "pascal",
     },
     manifest: {
-      name: "Vegas",
-      short_name: "Vegas",
-      description: "Welcome in Vegas",
+      name: "pascal",
+      short_name: "pascal",
+      description: "Welcome in pascal",
       lang: "en",
       display: "standalone",
       start_url: "/?standalone=true",

@@ -6,9 +6,9 @@
 body {
     direction: ltr;
     text-align: left;
-    font-family: 'gobold_thin_lightregular';
+    font-family: 'Segoe Print';
     font-weight: normal;
-    background-color: $secondColor !important;
+    background-color: $thirdColor !important;
     line-height: 1.5;
     font-size: 16px;
     font-weight: 400;
@@ -33,7 +33,7 @@ button,
 input,
 textarea,
 p {
-    font-family: 'gobold_thin_lightregular';
+    font-family: 'Segoe Print';
     font-weight: normal;
 }
 
@@ -59,7 +59,7 @@ p {
         margin: auto;
         position: relative;
         border-radius: 35px;
-        background-color: rgba(255, 255, 255, 0.6);
+        // background-color: rgba(255, 255, 255, 0.6);
         .navbar-brand {
             width: 60px;
             margin: 7px;
@@ -75,11 +75,17 @@ p {
             padding-right: 20px;
             justify-content: unset !important;
             width: unset !important;
+            .nav-item {
+                p,
+                a {
+                    color: $mainColor !important;
+                }
+            }
             .nav-link {
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.63);
+                background-color: $thirdColor;
                 margin-left: 15px;
                 line-height: 17.5px;
                 -webkit-border-radius: 50%;
@@ -88,6 +94,16 @@ p {
                 -o-border-radius: 50%;
                 a {
                     font-size: 16px;
+                    color: $mainColor;
+                }
+                &:hover {
+                    background-color: $mainColor !important;
+                    text-decoration: unset !important;
+                    p,
+                    a {
+                        color: $thirdColor !important;
+                        text-decoration: unset !important;
+                    }
                 }
             }
             .radio {
@@ -105,12 +121,16 @@ p {
             }
         }
         a {
-            color: $mainColor !important;
+            color: $secondColor !important;
             font-weight: 600;
             transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
             &:hover {
                 color: $thirdColor !important;
-                text-decoration: none;
+                text-decoration: underline;
             }
         }
         .qty {
@@ -134,9 +154,14 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     height: 350px;
+    width: 100%;
     color: $secondColor;
-    padding: 35px 0;
     text-align: center;
+    footer {
+        background-color: #0b3a49ad;
+        height: 100%;
+        padding: 35px 0;
+    }
     .logo {
         img {
             width: 130px;
@@ -144,7 +169,7 @@ p {
     }
     .social {
         color: $secondColor;
-        font-size: 22px;
+        font-size: 21px;
         i {
             margin: 0 7px;
             cursor: pointer
@@ -165,11 +190,11 @@ p {
         }
     }
     h4 {
-        color: $mainColor;
+        color: $secondColor;
         padding-bottom: 15px;
     }
     a {
-        color: $secondColor;
+        color: $thirdColor;
         text-decoration: none;
         cursor: pointer;
     }
@@ -346,7 +371,7 @@ p {
         border-bottom: none;
     }
     header {
-        background-color: $secondColor;
+        background-color: $thirdColor;
         color: #fff;
         font-weight: bold;
         border-radius: 10px 10px 0 0;
@@ -523,8 +548,8 @@ p {
         .category-name {
             width: 100%;
             height: 100%;
-            border-radius: 50%;
-            background-color: #00000065;
+            border-radius: 10px;
+            background-color: #0b3a49ad;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -533,17 +558,17 @@ p {
             font-weight: bold;
             font-size: 20px;
             line-height: 180px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
         }
         .category-image {
             width: 100%;
             img {
-                max-width: 100%;
-                border-radius: 50%;
+                width: 100%;
                 height: 180px;
+                border-radius: 10px;
             }
         }
     }
@@ -552,20 +577,27 @@ p {
 // End Category
 // Start Order Now
 .orderNow-component {
-    padding: 50px 0;
+    // padding: 50px 0;
     width: 100%;
+    // background-color: #0b3a49ad;
     position: relative;
     img {
         width: 100%;
     }
     .content {
         position: absolute;
+        background-color: #0b3a49ad;
+        width: 100%;
+        height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin: auto;
         h2 {
             color: $secondColor;
-            margin-bottom: 25px;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, 222%);
         }
         .btn {
             background-color: rgba(255, 255, 255, 0.507);
@@ -580,6 +612,9 @@ p {
             -moz-border-radius: 35px;
             -ms-border-radius: 35px;
             -o-border-radius: 35px;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, 222%);
         }
     }
 }
@@ -982,7 +1017,7 @@ p {
             margin: 5px;
             padding: 15px;
             height: 100px;
-            background-color: #D9B3B4;
+            background-color: #0b3a49ad;
             .custom-control-input:checked~.custom-control-label::before {
                 border-color: $mainColor;
                 background-color: $mainColor;
@@ -1030,7 +1065,7 @@ p {
     padding: 30px;
     margin: 30px 0;
     .title {
-        color: $mainColor;
+        color: $mainColor !important;
     }
     hr {
         border-top: 1px solid $mainColor;
@@ -1056,14 +1091,14 @@ p {
     .nav-tabs .nav-link {
         font-weight: bold;
         background-color: transparent !important;
-        color: $thirdColor;
+        color: $mainColor;
         border: unset;
     }
     .nav-tabs .nav-link.active,
     .nav-tabs .nav-item.show .nav-link {
         font-weight: bold;
         background-color: transparent !important;
-        color: $thirdColor;
+        color: $mainColor;
         border-top: unset;
         border-right: unset;
         border-left: unset;
