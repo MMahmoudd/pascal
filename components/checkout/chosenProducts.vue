@@ -277,6 +277,7 @@ export default {
   }),
   created() {
     this.getCart();
+    this.getSettings();
   },
   computed: {
     total() {
