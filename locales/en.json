@@ -92,6 +92,8 @@
 
   "checkout": {
     "checkout": "checkout",
+    "tax": "tax",
+    "service": "service ",
     "chooseNewLocation": "Choose New Location",
     "deleteAllCartData": "Delete All Cart Data",
     "subtotal": "Subtotal",
