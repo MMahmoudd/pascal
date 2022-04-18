@@ -4,7 +4,8 @@
     <div class="pages">
       <Nuxt />
     </div>
-    <div class="justify-content-center">
+
+    <!-- <div class="justify-content-center">
       <a
         id="over"
         href="https://foodclub-eg.com/"
@@ -15,8 +16,18 @@
       >
         foodclub
       </a>
-    </div>
+    </div> -->
     <FooterComponent />
+    <div class="justify-content-center">
+      <a
+        href="https://foodclub-eg.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="position: fixed"
+      >
+        <img id="over" src="../assets/images/Foodclup.jpg" />
+      </a>
+    </div>
   </div>
 </template>
 

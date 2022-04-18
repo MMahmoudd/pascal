@@ -125,7 +125,7 @@ p {
             }
         }
         a {
-            color: $secondColor !important;
+            color: #006a17 !important;
             font-weight: 600;
             transition: all .3s ease-in-out;
             -webkit-transition: all .3s ease-in-out;
@@ -160,7 +160,7 @@ p {
     background-repeat: no-repeat;
     height: 350px;
     width: 100%;
-    color: $secondColor;
+    color: #006a17;
     text-align: center;
     footer {
         background-color: #0b3a49ad;
@@ -195,7 +195,7 @@ p {
         }
     }
     h4 {
-        color: $secondColor;
+        color: #006a17;
         padding-bottom: 15px;
     }
     a {
@@ -1173,12 +1173,16 @@ p {
 // End gallery-page-component
 //start foodclub
 #over {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  bottom: 2.5rem;
+  right: 0.6rem;
   position: fixed;
-  bottom: 5%;
+  width: 7%;
   overflow: auto;
+  border-radius: 50%;
 }
-
 //end food club
+.card {
+  background-color:#417f93;
+  display: inline-block;
+  border-radius: 1.25rem;
+}
