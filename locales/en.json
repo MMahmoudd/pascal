@@ -18,7 +18,7 @@
     "news": "News",
     "information": "Information",
     "noData": "No data for now",
-    "events": "events"
+    "event": "event"
   },
 
   "home": {
@@ -70,7 +70,8 @@
     "messagePlaceholder": "message",
     "send": "Send",
     "phone": "Phone",
-    "address": "Address"
+    "address": "Address",
+    "status": "status"
   },
 
   "branches": {

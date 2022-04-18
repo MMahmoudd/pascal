@@ -30,7 +30,7 @@
                   id="input-1"
                   v-model="form.status"
                   type="text"
-                  :placeholder="$t('contactUs.status')"
+                  :placeholder="$t('contactUs.statusPlaceholder')"
                   required
                 ></b-form-input>
               </b-form-group>
@@ -54,6 +54,7 @@
                   v-model="form.phone"
                   :placeholder="$t('contactUs.phone')"
                   required
+                  oninput="this.value = this.value.replace(/[^0-9.+]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
                 ></b-form-input>
               </b-form-group>
             </div>
