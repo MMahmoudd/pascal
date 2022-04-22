@@ -71,8 +71,8 @@ p {
             }
         .navbar-nav {
           justify-content: space-around;
-          width: 60%;
-          padding-left: revert;
+          width: 67%;
+          // padding-left: revert;
         }
         .ml-auto {
             padding-right: 5%;
@@ -91,10 +91,10 @@ p {
                 background-color: $thirdColor;
                 margin-left: 15px;
                 line-height: 17.5px;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
+                // -webkit-border-radius: 50%;
+                // -moz-border-radius: 50%;
+                // -ms-border-radius: 50%;
+                // -o-border-radius: 50%;
                 a {
                     font-size: 16px;
                     color: $mainColor;
@@ -265,7 +265,7 @@ p {
             position: relative;
             transition: all .4s ease-in-out;
             img {
-                width: 100%;
+                width: 220px;
                 height: -webkit-fill-available;
             }
         }
@@ -553,7 +553,7 @@ p {
         .category-name {
             width: 100%;
             height: 100%;
-            border-radius: 10px;
+            border-radius: 50%;
             background-color: #0b3a49ad;
             position: absolute;
             top: 50%;
@@ -570,12 +570,14 @@ p {
         }
         .category-image {
             width: 100%;
+
             img {
-                width: 100%;
-                height: 180px;
-                border-radius: 10px;
+              width: 100%;
+              border-radius: 2px;
+              height: 150px;
+              object-fit: cover;
             }
-        }
+       }
     }
 }
 
@@ -765,8 +767,21 @@ p {
                 box-shadow: none;
             }
         }
-    }
+      }
+      .image::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #5b5858;
+        opacity: 0.6;
+        top: 0;
+        ;
+        left: 0;
+      }
 }
+
 
 // End Search Page
 // Start Cart

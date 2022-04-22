@@ -46,6 +46,10 @@ export default {
     // plugins: [
     //     { src: '~/plugins/i18n.js' },
     // ],
+plugins: [
+        // { src: '~/plugins/i18n.js' },
+        { src: '~/plugins/map', ssr: false }
+    ],
     // i18n : {
     //     skipSettingLocaleOnNavigate: true,
     // },
@@ -93,7 +97,7 @@ export default {
             start_url: "/?standalone=true",
         },
         icon: {
-            source: "./static/logo copy.png",
+            source: "./static/logoqq.png",
             purpose: 'maskable'
         },
     },

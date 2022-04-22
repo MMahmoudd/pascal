@@ -6,15 +6,19 @@
           <div class="col-md-2">
             <div class="logo">
               <img src="../../assets/images/logo.svg" alt="logo" />
-              <div>15727</div>
+              <div>{{ info.phone }}</div>
+              <div>{{ info.phone2 }}</div>
               <div class="social">
-                <a :href="links.facebook" target="_blank"
+                <a :href="links.facebook" target="_blank" v-if="links.facebook"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
-                <a :href="links.instagram" target="_blank"
+                <a
+                  :href="links.instagram"
+                  target="_blank"
+                  v-if="links.instagram"
                   ><i class="fab fa-instagram"></i
                 ></a>
-                <a :href="links.twitter" target="_blank">
+                <a :href="links.twitter" target="_blank" v-if="links.twitter">
                   <i class="tiktok">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +32,7 @@
                     </svg>
                   </i>
                 </a>
-                <a :href="links.youtube" target="_blank">
+                <a :href="links.youtube" target="_blank" v-if="links.youtube">
                   <i class="fab fa-youtube-square"></i>
                 </a>
               </div>
@@ -113,6 +117,10 @@ export default {
       youtube: "",
       instagram: "",
     },
+    info: {
+      phone: "",
+      phone2: "",
+    },
     categories: [],
   }),
   created() {
@@ -142,6 +150,8 @@ export default {
           instagram,
           youtube,
         };
+        this.info.phone = settings.phone1;
+        this.info.phone2 = settings.phone2;
       } catch (error) {
         console.log({ error });
       }

@@ -1,11 +1,11 @@
 {
   "global": {
-    "visitLink": "visit link",
+    "visitLink": "Visit link",
     "itemAdded": "Item Added To Your Cart",
     "goToCart": "Go To Your Cart",
     "goToHome": "Go To Home Page",
     "addToCart": "Add To Cart",
-    "tax": "tax",
+    "tax": "Tax",
     "home": "Home",
     "menu": "Menu",
     "pages": "Pages",
@@ -18,7 +18,8 @@
     "news": "News",
     "information": "Information",
     "noData": "No data for now",
-    "event": "event"
+    "event": "Events",
+    "partener": "Became a partner"
   },
 
   "home": {
@@ -33,14 +34,14 @@
 
   "login": {
     "login": "Login",
-    "emailDescription": "We'll never share your email with anyone else.",
-    "emailPlaceholder": "Enter email",
+    "emailDescription": "We'll Never Hhare your Email With Anyone Else.",
+    "emailPlaceholder": "Enter Email",
     "passwordPlaceholder": "Enter Password"
   },
 
   "register": {
     "register": "Register",
-    "createNew": "Create a new Account",
+    "createNew": "Create a New Account",
     "nameLabel": "Name",
     "namePlaceholder": "Your Name",
     "phoneLabel": "Phone Number",
@@ -58,44 +59,44 @@
   },
 
   "search": {
-    "results": "research results",
+    "results": "Research Results",
     "noResults": "No Results"
   },
 
   "contactUs": {
     "contactUs": "Contact Us",
-    "getInTouch": "Get In Touch & Let's Make Something Awesome Aogether.",
+    "getInTouch": "Get In Touch & Let's Make Something Awesome Together.",
     "namePlaceholder": "Name",
     "emailPlaceholder": "Email",
-    "messagePlaceholder": "message",
+    "messagePlaceholder": "Message",
     "send": "Send",
     "phone": "Phone",
     "address": "Address",
-    "status": "status"
+    "status": "Status"
   },
 
   "branches": {
     "branches": "Branches",
-    "workdays": "workdays",
+    "workdays": "Workdays",
     "timesofWork": "Times of Work",
     "noBranchesYet": "No Branches Yet"
   },
 
   "cart": {
     "myCart": "My Cart",
-    "backToShop": "back to shop",
+    "backToShop": "Back To Shop",
     "subtotal": "Subtotal",
     "continue": "Continue",
     "noItemsInCart": "No Items In Cart",
-    "sizeSelcted": "Size selcted",
+    "sizeSelcted": "Size Selcted",
     "addOnName": "Add on Name",
     "addOnPrice": "Add on Price"
   },
 
   "checkout": {
-    "checkout": "checkout",
-    "tax": "tax",
-    "service": "service ",
+    "checkout": "Checkout",
+    "tax": "Tax",
+    "service": "Service ",
     "chooseNewLocation": "Choose New Location",
     "deleteAllCartData": "Delete All Cart Data",
     "subtotal": "Subtotal",
@@ -103,11 +104,11 @@
     "addNewAddress": "Add New Address",
     "noOrdersYet": "No Orders Yet",
     "backToProducts": "back to Add your Products",
-    "selectGovernrate": "select governrate",
-    "selectArea": "select area",
-    "steetAddress": "street address",
+    "selectGovernrate": "Select Governrate",
+    "selectArea": "Select Area",
+    "steetAddress": "Street Address",
     "phone": "phone",
-    "createAddress": "Create address",
+    "createAddress": "Create Address",
 
     "couponPlaceholder": "Enter Coupon",
     "submitCoupon": "Apply Coupon",

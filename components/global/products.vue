@@ -25,8 +25,10 @@
               </div>
               <div class="product-details d-flex justify-content-between mt-1">
                 <p class="product_title">{{ product.name_translate }}</p>
-                <p class="product_price">{{ product.sizes[0].price }} LE</p>
               </div>
+              <p class="product_price">
+                <strong>( {{ product.sizes[0].price }} LE )</strong>
+              </p>
             </div>
           </div>
         </div>
@@ -65,7 +67,7 @@
                 >
                   {{ size.name }}
                   <span class="price"
-                    >{{ " " + size.price }} L.E</span
+                    >( {{ " " + size.price }} L.E )</span
                   ></b-form-radio
                 >
               </b-form-group>
@@ -206,6 +208,7 @@ export default {
       // console.log('test', productItem)
       this.showDetails = true;
       this.product = productItem;
+      this.selecetdSize = productItem.sizes[0];
     },
     close() {
       this.selecetdSize.quantity = 1;
